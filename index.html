@@ -150,6 +150,75 @@ input{
   cursor: pointer;
 }
 
+#footer{
+  display: flex;
+  position: absolute;
+  bottom:0;
+  left:0;
+  align-items: space-between;
+  background-color: #f2f2f2;
+  border-top: 1px solid #dadce0;
+  width: 100%;
+  height: 40px;
+  
+  align-items: center;
+  color: rgba(0,0,0,.54);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer_left{
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+  
+}
+
+#footer_right{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  background-color: #f2f2f2;
+  ;
+  
+}
+
+.footer_left1{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.footer_right1{
+  margin-right:30px;
+  cursor: pointer;
+}
+
+.footer_left1:hover {
+  text-decoration: underline;
+}
+
+.footer_right1:hover {
+  text-decoration: underline;
+}
+
+#pre-footer{
+  display: flex;
+  position: fixed;
+  bottom:41px;
+  left:0;
+  align-items: space-between;
+  background-color: #f2f2f2;
+  border-top: 1px solid #dadce0;
+  width: 100%;
+  height: 40px;
+  color: rgba(0,0,0,.54);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  padding-left: 30px;
+}
+
 </style>
 
 
@@ -196,6 +265,22 @@ input{
           Google offered in: <a href="" id="language">polski</a>
         </div>  
     </div>
+    <footer id="pre-footer">
+        Poland
+    </footer>
+    <footer id="footer">
+        <div id="footer_left">
+              <div class="footer_left1" id="advertising">Advertising</div>
+              <div class="footer_left1" id="business">Business</div>
+              <div class="footer_left1" id="about">About</div>
+              <div class="footer_left1" id="how_search_works">How Search works</div>
+        </div>
+        <div id="footer_right">
+              <div class="footer_right1" id="privacy">Privacy</div>
+              <div class="footer_right1" id="terms">Terms</div>
+              <div class="footer_right1" id="settings">Settings</div>
+        </div>
+    </footer>
 </body>
 
 
@@ -255,6 +340,33 @@ document.getElementById('top_buttons2').onclick=function(){
   location.href="https://www.google.pl/imghp?hl=en&tab=wi&ogbl";
 };
 
+document.getElementById('advertising').onclick=function(){
+  location.href="https://ads.google.com/";
+};
+
+document.getElementById('business').onclick=function(){
+  location.href="https://www.google.com/services/";
+};
+
+document.getElementById('about').onclick=function(){
+  location.href="https://about.google/";
+};
+
+document.getElementById('how_search_works').onclick=function(){
+  location.href="https://www.google.com/search/howsearchworks/";
+};
+
+document.getElementById('privacy').onclick=function(){
+  location.href="https://policies.google.com/privacy";
+};
+
+document.getElementById('terms').onclick=function(){
+  location.href="https://policies.google.com/terms";
+};
+
+document.getElementById('settings').onclick=function(){
+  location.href="https://www.google.com/preferences";
+};
 
 </script>
 </html>
