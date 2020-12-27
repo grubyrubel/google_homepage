@@ -1,230 +1,11 @@
 <!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>google homepage</title>
+  <link href="styles/index.css" rel="stylesheet">
+</head>
 <html>
-<style>
-#container{
 
-
-
-}
-input{
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position:absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-}
-
-#buttons_id{
-  display:flex;
-}
-
-#text_field{
-  border: 0px;
-  background: transparent;
-  width: 392px;
-  height: 34px;
-  outline:none;
-}
-
-#searchbox{
-  display:flex;
-  border: 1px solid #dfe1e5;
-  height: 40px;
-  border-radius: 24px;
-  margin-top: 26px;
-  margin-bottom: 20px;
-  padding: 5px 8px 0px 16px;
-}
-
-#magnifier{
-  align-self: center;
-  width:18px;
-  height:18px;
-  margin-bottom: 7px;
-  margin-right: 15px;
-}
-
-#button{
-  align-self: center;
-  width: 15px;
-  height: 15px;
-  margin-bottom: 7px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-
-#searchbox:hover{
-  box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
-
-.prevent{
-  box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
-
-.buttons{
-  display:flex;
-  height: 36px;
-  justify-content: center;
-  align-items: center; 
-  background-color: #f6f7fa;
-  border: 1px solid #f6f7fa;
-  border-radius: 4px;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#3c4043;
-  padding: 0 16px;
-  margin: 11px 6px;
-  cursor: pointer;
-}
-
-.buttons:hover{
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  border: 1px solid #dadce0;
-}
-
-#offered{
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-}
-
-#language{
-  color:#1a0dab;
-  text-decoration: none;
-}
-
-#language:hover{
-  text-decoration: underline;
-}
-
-#navbar{
-  display:flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top:15px;
-}
-
-#grid{
-  height:17px; 
-  width: 17px; 
-  display:grid;
-  grid-template-columns: 4px 4px 4px;
-  grid-template-rows: 4px 4px 4px;
-  column-gap: 2px;
-  row-gap: 2px;
-  cursor: pointer;
-  margin: 0px 13px;
-  
-}
-.items{
- background-color: #8f9094;
-}
-
-#grid:hover .items{
- background-color: #202124;
-}
-
-#acount{
-  height: 34px;
-  width: 34px;
-  margin:0px 10px;
-  margin-right: 24px;
-  cursor: pointer;
-}
-
-.top_buttons{
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px 8px;
-}
-
-.top_buttons:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#footer{
-  display: flex;
-  position: absolute;
-  bottom:0;
-  left:0;
-  
-  background-color: #f2f2f2;
-  border-top: 1px solid #dadce0;
-  width: 100%;
-  height: 40px;
-  
-  align-items: center;
-  color: rgba(0,0,0,.54);
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#footer_left{
-  display: flex;
-  width: 50%;
-  justify-content: flex-start;
-  background-color: #f2f2f2;
-  
-}
-
-#footer_right{
-  display: flex;
-  width: 50%;
-  justify-content: flex-end;
-  background-color: #f2f2f2;
-  ;
-  
-}
-
-.footer_left1{
-  margin-left: 30px;
-  cursor: pointer;
-}
-
-.footer_right1{
-  margin-right:30px;
-  cursor: pointer;
-}
-
-.footer_left1:hover {
-  text-decoration: underline;
-}
-
-.footer_right1:hover {
-  text-decoration: underline;
-}
-
-#pre-footer{
-  display: flex;
-  position: absolute;
-  bottom:41px;
-  left:0;
-  
-  background-color: #f2f2f2;
-  border-top: 1px solid #dadce0;
-  width: 100%;
-  height: 40px;
-  color: rgba(0,0,0,.54);
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
-  
-}
- 
- #pre-footer-word{
-   padding-left: 30px;
- }
-
-</style>
 
 
 <body id="container">    
@@ -247,16 +28,16 @@ input{
           <div class="items"></div>
         </div>
         <div>
-          <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/acount.png" id="acount">
+          <img src="images/acount.png" id="acount">
         </div>
     </nav>
     <div id="logo">    
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 alt="google logo">
         <div id="searchbox">
-                <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/magnifier.png" id="magnifier">
+                <img src="images/magnifier.png" id="magnifier">
                 <input type="text" id="text_field">
-                <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/remove_button.png" id="button">
+                <img src="images/remove_button.png" id="button">
         </div>
         <div id="buttons_id"> 
               <div class="buttons" id="button1"> 
@@ -289,89 +70,6 @@ input{
 </body>
 
 
-<script>
+<script src="scripts/index.js"></script>
 
-var text_field_prevent=document.getElementById('text_field');
-var searchbox_prevent=document.getElementById('searchbox');
-var button_clear=document.getElementById('button');
-
-
-document.addEventListener('click', function(event) {
-  var isClickInside = text_field_prevent.contains(event.target);
-
-  if (!isClickInside) {
-    searchbox_prevent.className = "";
-  }else{searchbox_prevent.className = "prevent";}
-});
-
-
-searchbox_prevent.onclick=function(){
-  text_field_prevent.focus();
-};
-
-
-button_clear.style.visibility="hidden";
-
-text_field_prevent.oninput = function(){
-if (text_field_prevent.value ==''){
-  button_clear.style.visibility="hidden";
-}else{
-  button_clear.style.visibility="visible";
-  
-};};
-
-button_clear.onclick = function clearfields (){
-  text_field_prevent.value="";
-  button_clear.style.visibility="hidden";
-};
-
-document.getElementById('button1').onclick=function(){
-  location.href="";
-};
-
-document.getElementById('button2').onclick=function(){
-  location.href="https://www.google.com/doodles/";
-};
-
-document.getElementById('acount').onclick=function(){
-  location.href="https://github.com/grubyrubel";
-};
-
-document.getElementById('top_buttons1').onclick=function(){
-  location.href="https://accounts.google.com/";
-};
-
-document.getElementById('top_buttons2').onclick=function(){
-  location.href="https://www.google.pl/imghp?hl=en&tab=wi&ogbl";
-};
-
-document.getElementById('advertising').onclick=function(){
-  location.href="https://ads.google.com/";
-};
-
-document.getElementById('business').onclick=function(){
-  location.href="https://www.google.com/services/";
-};
-
-document.getElementById('about').onclick=function(){
-  location.href="https://about.google/";
-};
-
-document.getElementById('how_search_works').onclick=function(){
-  location.href="https://www.google.com/search/howsearchworks/";
-};
-
-document.getElementById('privacy').onclick=function(){
-  location.href="https://policies.google.com/privacy";
-};
-
-document.getElementById('terms').onclick=function(){
-  location.href="https://policies.google.com/terms";
-};
-
-document.getElementById('settings').onclick=function(){
-  location.href="https://www.google.com/preferences";
-};
-
-</script>
 </html>
