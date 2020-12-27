@@ -58,6 +58,7 @@ input{
   height: 15px;
   margin-bottom: 7px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 #searchbox:hover{
@@ -155,7 +156,7 @@ input{
   position: absolute;
   bottom:0;
   left:0;
-  align-items: space-between;
+  
   background-color: #f2f2f2;
   border-top: 1px solid #dadce0;
   width: 100%;
@@ -207,7 +208,7 @@ input{
   position: absolute;
   bottom:41px;
   left:0;
-  align-items: space-between;
+  
   background-color: #f2f2f2;
   border-top: 1px solid #dadce0;
   width: 100%;
@@ -216,8 +217,12 @@ input{
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
-  padding-left: 30px;
+  
 }
+ 
+ #pre-footer-word{
+   padding-left: 30px;
+ }
 
 </style>
 
@@ -242,16 +247,16 @@ input{
           <div class="items"></div>
         </div>
         <div>
-          <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/acount.png" id="acount">
+          <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/acount.png" id="acount">
         </div>
     </nav>
     <div id="logo">    
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 alt="google logo">
         <div id="searchbox">
-                <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/magnifier.png" id="magnifier">
+                <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/magnifier.png" id="magnifier">
                 <input type="text" id="text_field">
-                <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/remove_button.png" id="button">
+                <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/remove_button.png" id="button">
         </div>
         <div id="buttons_id"> 
               <div class="buttons" id="button1"> 
@@ -266,7 +271,7 @@ input{
         </div>  
     </div>
     <footer id="pre-footer">
-        Poland
+        <div id="pre-footer-word">Poland</div>
     </footer>
     <footer id="footer">
         <div id="footer_left">

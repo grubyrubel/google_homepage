@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+#nav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+#top_nav_left{
+    display:flex;
+    
+    
+    margin-top:20px; 
+    width: 80%;
+    justify-content: flex-start;
+    
+}
+
+#top_nav_right{
+    display:flex;
+    
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#bottom_nav{
+    display:flex;
+    position: absolute;
+    top: 50px;
+    left:0;
+    
+    border-bottom: 1px solid #dadce0;
+    
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #70757a;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+
+}
+
+.nav_images{
+    
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    padding-top: 0px;
+    
+
+}
+
+.bar_lower{
+    display:flex;
+    
+    align-items: flex-start;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+}
+
+
+
+.nav_label{
+    display:flex;
+    align-self: center; 
+    
+    
+}
+
+.bar_lower1{
+    display:flex;
+    
+    align-items: flex-start;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom: 3px solid blue;
+    padding-bottom: 13px;
+}
+
+#first_label{
+    margin-left: 170px;
+    
+}
+
+#seventh_label{
+    margin-left: 80px;
+}
+
+#google_logo{
+    width: 93px;
+    height: 31px;
+    padding-left: 25px;
+    padding-top:8px;
+}
+
+input{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttons_id{
+  display:flex;
+}
+
+#text_field{
+  border: 0px;
+  background: transparent;
+  width: 572px;
+  height: 34px;
+  outline:none;
+}
+
+.searchbox{
+  display:flex;
+  border: 1px solid #dfe1e5;
+  height: 40px;
+  border-radius: 24px;
+  margin-left: 14px;
+  margin-bottom: 20px;
+  padding: 5px 8px 0px 16px;
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+.searchbox-non{
+  display:flex;
+  border: 1px solid #dfe1e5;
+  height: 40px;
+  border-radius: 24px;
+  margin-left: 47px;
+  margin-bottom: 20px;
+  padding: 5px 8px 0px 16px;
+}
+
+.magnifier{
+  
+  align-self: center;
+  width:18px;
+  height:18px;
+  margin-bottom: 4px;
+  margin-right: 15px;
+}
+
+.magnifier-non{
+  display:none;
+}
+
+#button{
+  align-self: center;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 4px;
+  margin-right: 15px;
+  
+}
+
+#bar{
+    margin-left: 3px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-right: 2px solid #dfe1e5;
+    
+}
+
+#magnifier_blue{
+    align-self: center;
+    width:23px;
+    height:23px;
+    margin-bottom: 7px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#searchbox:hover{
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+#grid{
+  height:17px; 
+  width: 17px; 
+  display:grid;
+  grid-template-columns: 4px 4px 4px;
+  grid-template-rows: 4px 4px 4px;
+  column-gap: 2px;
+  row-gap: 2px;
+  cursor: pointer;
+  margin: 23px 3px;
+  padding:12px;
+  border-radius: 50%;
+  
+}
+.items{
+ background-color: #8f9094;
+}
+
+#grid:hover {
+ background-color: rgba(60,64,67,0.08);
+}
+
+#acount{
+  height: 34px;
+  width: 34px;
+  margin:25px 10px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+</style>
+
+<body>
+<nav id="nav">
+<div id="top_nav_left">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                id="google_logo">
+    <div class="searchbox-non" id="searchbox">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/magnifier.png" class="magnifier-non"
+                id="magnifier">
+        <input type="text" id="text_field">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/remove_button.png" id="button">
+        <div id="bar"></div>
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/magnifier_blue.png" id="magnifier_blue">
+        
+    </div>
+    
+</div>
+<div id="top_nav_right"></div>
+    <div id="grid">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+      </div>
+      <div>
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/acount.png" id="acount">
+      </div>
+    </div>
+   
+</nav>
+<div id="bottom_nav">
+    <div class="bar_lower" id="first_label">
+        <img src="/https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/all.png" class="nav_images">
+        <div class="nav_label">All</div>
+    </div>
+    <div class="bar_lower" id="second_label">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/images.png" class="nav_images">
+        <div class="nav_label">Images</div>
+    </div>
+    <div class="bar_lower" id="third_label">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/videos.png" class="nav_images">
+        <div class="nav_label">Videos</div>
+    </div>
+    <div class="bar_lower" id="fourth_label">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/maps.png" class="nav_images">
+        <div class="nav_label">Maps</div>
+    </div>
+    <div class="bar_lower" id="fiveth_label">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/news.png" class="nav_images">
+        <div class="nav_label">News</div>
+    </div>
+    <div class="bar_lower" id="sixth_label">
+        <img src="https://raw.githubusercontent.com/grubyrubel/google_homepage/main/images/more.png" class="nav_images">
+        <div class="nav_label">More</div>
+    </div>
+    <div class="bar_lower" id="seventh_label">
+        Settings
+    </div>
+    <div class="bar_lower" id="eighth_label">
+        Tools
+    </div>
+</di>
+
+</body>
+
+<script>
+
+var text_field_prevent=document.getElementById('text_field');
+var searchbox_prevent=document.getElementById('searchbox');
+var button_clear=document.getElementById('button');
+var bar_clear=document.getElementById('bar');
+var magnifier=document.getElementById('magnifier');
+
+document.addEventListener('click', function(event) {
+  var isClickInside = text_field_prevent.contains(event.target);
+
+  if (!isClickInside) {
+    
+    magnifier.className="magnifier-non";
+    searchbox_prevent.className="searchbox-non";
+
+  }else{
+    
+    magnifier.className="magnifier";
+    searchbox_prevent.className="searchbox";
+  }
+});
+
+searchbox_prevent.onclick=function(){
+  text_field_prevent.focus();
+};
+
+button_clear.style.visibility="hidden";
+bar_clear.style.visibility="hidden";
+
+text_field_prevent.oninput = function(){
+if (text_field_prevent.value ==''){
+  button_clear.style.visibility="hidden";
+  bar_clear.style.visibility="hidden";
+}else{
+  button_clear.style.visibility="visible";
+  bar_clear.style.visibility="visible";
+};};
+
+button_clear.onclick = function clearfields (){
+  text_field_prevent.value="";
+  button_clear.style.visibility="hidden";
+  bar_clear.style.visibility="hidden";
+};
+
+document.getElementById('magnifier_blue').onclick=function(){
+  location.href="";
+};
+
+document.getElementById('acount').onclick=function(){
+  location.href="https://github.com/grubyrubel";
+};
+
+document.getElementById('first_label').className="bar_lower1";
+
+document.getElementById('first_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower1";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower";
+};
+
+document.getElementById('second_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower1";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower";
+
+};
+
+document.getElementById('third_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower1";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower";
+
+};
+
+document.getElementById('fourth_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower1";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower";
+
+};
+
+document.getElementById('fiveth_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower1";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower";
+
+};
+
+document.getElementById('sixth_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower1";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower";
+
+};
+
+document.getElementById('seventh_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower1";
+    document.getElementById('eighth_label').className="bar_lower";
+
+};
+
+document.getElementById('eighth_label').onclick=function(){
+    document.getElementById('first_label').className="bar_lower";
+    document.getElementById('second_label').className="bar_lower";
+    document.getElementById('third_label').className="bar_lower";
+    document.getElementById('fourth_label').className="bar_lower";
+    document.getElementById('fiveth_label').className="bar_lower";
+    document.getElementById('sixth_label').className="bar_lower";
+    document.getElementById('seventh_label').className="bar_lower";
+    document.getElementById('eighth_label').className="bar_lower1";
+
+};
+
+</script>
+</html>
