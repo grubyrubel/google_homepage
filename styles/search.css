@@ -263,8 +263,6 @@ input{
   box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
-
-
 #grid{
   height:17px; 
   width: 17px; 
@@ -372,6 +370,7 @@ input{
   width: 116px;
   margin-top: 2px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 #withmovie{
@@ -402,4 +401,106 @@ input{
   
 }
 
+#table{
+  position:relative;
+  width:652px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 170px;
+}
 
+#first_line{
+  padding: 12px 16px;
+  font-size: 20px;
+}
+
+.lines{
+  
+  font-size: 16px;
+  padding: 9px 16px;
+  border-top: 1px solid #dfe1e5;
+}
+
+.lines1{
+  
+  font-size: 16px;
+  padding-left:  16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.list1{
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.date{
+  color: #70757a;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top:-5px;
+}
+
+.result1{
+  margin-top: 24px;
+  margin-bottom: 30px;
+  
+  width: 600px;
+}
+
+.down_list{
+  display:flex;
+  margin-top:-10px
+} 
+
+.down_list_k{
+  color:#1a0dab;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#buttonl2{
+  width: 12px;
+  height: 8px;
+  margin-left: 350px;
+}
+
+#buttonl3{
+  width:12px;
+  height: 8px;
+  margin-left: 311px;
+}
+
+#buttonl4{
+  width:12px;
+  height: 8px;
+  margin-left: 284px;
+}
+
+#thl{
+  display:inline;
+  line-height: 1.4;
+}
+
+#date{
+  display:inline;
+  color: #70757a;
+  font-size: 12px;
+  padding-left: 5px;
+  
+}
+
+#feedback{
+  margin-left:755px;
+  color: #70757a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#feedback:hover{
+  text-decoration: underline;
+}

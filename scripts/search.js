@@ -242,3 +242,54 @@ window.onscroll=function(){
   };
   
 };
+
+document.getElementById('second_line1').style="display:none";
+document.getElementById('buttonl2').src="images/down.png";
+
+document.getElementById('second_line').onclick = function(){
+  if (document.getElementById('second_line1').style.display=="block"){
+    document.getElementById('second_line1').style="display:none";
+    document.getElementById('buttonl2').src="images/down.png";
+  }
+  else{ 
+    document.getElementById('second_line1').style="display:block";
+    document.getElementById('buttonl2').src="images/up.png";
+  };};
+
+  document.getElementById('l2').onclick=function(){
+    document.getElementById('l2').className="center_part_after";
+  };
+
+  document.getElementById('third_line1').style="display:none";
+  document.getElementById('buttonl3').src="images/down.png";
+  
+  document.getElementById('third_line').onclick = function(){
+    if (document.getElementById('third_line1').style.display=="block"){
+      document.getElementById('third_line1').style="display:none";
+      document.getElementById('buttonl3').src="images/down.png";
+    }
+    else{ 
+      document.getElementById('third_line1').style="display:block";
+      document.getElementById('buttonl3').src="images/up.png";
+    };};
+  
+    document.getElementById('l3').onclick=function(){
+      document.getElementById('l3').className="center_part_after";
+    };
+
+  document.getElementById('fourth_line1').style="display:none";
+  document.getElementById('buttonl4').src="images/down.png";
+  
+  document.getElementById('fourth_line').onclick = function(){
+    if (document.getElementById('fourth_line1').style.display=="block"){
+      document.getElementById('fourth_line1').style="display:none";
+      document.getElementById('buttonl4').src="images/down.png";
+    }
+    else{ 
+      document.getElementById('fourth_line1').style="display:block";
+      document.getElementById('buttonl4').src="images/up.png";
+    };};
+  
+    document.getElementById('l4').onclick=function(){
+      document.getElementById('l4').className="center_part_after";
+    };
