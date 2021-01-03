@@ -5,6 +5,18 @@ var bar_clear=document.getElementById('bar');
 var magnifier=document.getElementById('magnifier');
 var magnifier_blue=document.getElementById('magnifier_blue');
 
+document.addEventListener('click', function(event) {
+  var isClickInside = text_field_prevent.contains(event.target);
+
+  if (!isClickInside) {
+    magnifier.className="magnifier-non";
+    searchbox_prevent.className="searchbox-non";
+  }else{
+      magnifier.className="magnifier";
+      searchbox_prevent.className="searchbox";
+  }
+});
+
 searchbox_prevent.onclick=function(){
   text_field_prevent.focus();
 };
@@ -293,3 +305,299 @@ document.getElementById('second_line').onclick = function(){
     document.getElementById('l4').onclick=function(){
       document.getElementById('l4').className="center_part_after";
     };
+
+    var i=1;
+    var k;
+    
+    
+    document.getElementById('o1i').src="images/ored.png";
+    document.getElementById('o1').style="color:black";
+    document.getElementById('o1').className="";
+    document.getElementById('pre').style.visibility="hidden";
+    document.getElementById('nex').style.visibility="visible";
+    
+        document.getElementById('o1').onclick=function(){
+          document.getElementById('o1i').src="images/ored.png";
+          document.getElementById('o1').style="color:black";
+          document.getElementById('o1').className="";
+          document.getElementById('pre').style.visibility="hidden";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=1){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=1;
+        }; 
+
+        document.getElementById('o2').onclick=function(){
+          document.getElementById('o2i').src="images/ored.png";
+          document.getElementById('o2').style="color:black";
+          document.getElementById('o2').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=2){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=2;
+        };  
+
+        document.getElementById('o3').onclick=function(){
+          document.getElementById('o3i').src="images/ored.png";
+          document.getElementById('o3').style="color:black";
+          document.getElementById('o3').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=3){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=3;
+        }; 
+
+        document.getElementById('o4').onclick=function(){
+          document.getElementById('o4i').src="images/ored.png";
+          document.getElementById('o4').style="color:black";
+          document.getElementById('o4').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=4){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=4;
+        }; 
+
+        document.getElementById('o5').onclick=function(){
+          document.getElementById('o5i').src="images/ored.png";
+          document.getElementById('o5').style="color:black";
+          document.getElementById('o5').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=5){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=5;
+        }; 
+
+        document.getElementById('o6').onclick=function(){
+          document.getElementById('o6i').src="images/ored.png";
+          document.getElementById('o6').style="color:black";
+          document.getElementById('o6').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=6){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=6;
+        }; 
+
+        document.getElementById('o7').onclick=function(){
+          document.getElementById('o7i').src="images/ored.png";
+          document.getElementById('o7').style="color:black";
+          document.getElementById('o7').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=7){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=7;
+        }; 
+
+        document.getElementById('o8').onclick=function(){
+          document.getElementById('o8i').src="images/ored.png";
+          document.getElementById('o8').style="color:black";
+          document.getElementById('o8').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=8){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=8;
+        }; 
+
+        document.getElementById('o9').onclick=function(){
+          document.getElementById('o9i').src="images/ored.png";
+          document.getElementById('o9').style="color:black";
+          document.getElementById('o9').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="visible";
+          for(k=1; k<11; k++){
+            if(k!=9){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=9;
+        }; 
+
+        document.getElementById('o10').onclick=function(){
+          document.getElementById('o10i').src="images/ored.png";
+          document.getElementById('o10').style="color:black";
+          document.getElementById('o10').className="";
+          document.getElementById('pre').style.visibility="visible";
+          document.getElementById('nex').style.visibility="hidden";
+          for(k=1; k<11; k++){
+            if(k!=10){
+              document.getElementById('o'+k+'i').src="images/oyellow.png";
+              document.getElementById('o'+k).style="color:#4285f4";
+              document.getElementById('o'+k).className="ooo1";
+            };
+          };
+          i=10;
+        }; 
+
+
+    document.getElementById('nex').onclick=function(){
+      var iplus=i+1;
+      if(i < 10 && i>0){
+      document.getElementById('o'+i+'i').src="images/oyellow.png";
+      document.getElementById('o'+iplus+'i').src="images/ored.png";
+      document.getElementById('o'+iplus).style="color:black";
+      document.getElementById('o'+iplus).className="";
+      document.getElementById('o'+i).style="color:#4285f4";
+      document.getElementById('o'+i).className="ooo1";
+      if(i==9){
+        document.getElementById('nex').style.visibility="hidden";
+      };
+      if(i==1){
+        document.getElementById('pre').style.visibility="visible";
+      };
+      i++;
+      };
+    };
+
+    document.getElementById('gle').onclick=function(){
+      var iplus=i+1;
+      if(i < 10 && i>0){
+      document.getElementById('o'+i+'i').src="images/oyellow.png";
+      document.getElementById('o'+iplus+'i').src="images/ored.png";
+      document.getElementById('o'+iplus).style="color:black";
+      document.getElementById('o'+iplus).className="";
+      document.getElementById('o'+i).style="color:#4285f4";
+      document.getElementById('o'+i).className="ooo1";
+      if(i==9){
+        document.getElementById('nex').style.visibility="hidden";
+      };
+      if(i==1){
+        document.getElementById('pre').style.visibility="visible";
+      };
+      i++;
+      };
+    };
+
+    document.getElementById('pre').onclick=function(){
+      var iminus=i-1;
+      if(i > 1 && i<11){
+      document.getElementById('o'+i+'i').src="images/oyellow.png";
+      document.getElementById('o'+iminus+'i').src="images/ored.png";
+      document.getElementById('o'+iminus).style="color:black";
+      document.getElementById('o'+iminus).className="";
+      document.getElementById('o'+i).style="color:#4285f4";
+      document.getElementById('o'+i).className="ooo1";
+      if(i==2){
+        document.getElementById('pre').style.visibility="hidden";
+      };
+      if(i==10){
+        document.getElementById('nex').style.visibility="visible";
+      };
+      i--;
+      };
+    };
+
+    document.getElementById('G').onclick=function(){
+      var iminus=i-1;
+      if(i > 1 && i<11){
+      document.getElementById('o'+i+'i').src="images/oyellow.png";
+      document.getElementById('o'+iminus+'i').src="images/ored.png";
+      document.getElementById('o'+iminus).style="color:black";
+      document.getElementById('o'+iminus).className="";
+      document.getElementById('o'+i).style="color:#4285f4";
+      document.getElementById('o'+i).className="ooo1";
+      if(i==2){
+        document.getElementById('pre').style.visibility="hidden";
+      };
+      if(i==10){
+        document.getElementById('nex').style.visibility="visible";
+      };
+      i--;
+      };
+    };
+
+document.getElementById('pre').onmouseover=function(){
+  if(i!=1){
+    document.getElementById('pre').style="text-decoration:underline";
+  };
+};
+
+document.getElementById('G').onmouseover=function(){
+  if(i!=1){
+    document.getElementById('pre').style="text-decoration:underline";
+  };
+};
+
+document.getElementById('pre').onmouseout=function(){
+  if(i!=1){
+    document.getElementById('pre').style="text-decoration:none";
+  };
+};
+
+document.getElementById('G').onmouseout=function(){
+  if(i!=1){
+    document.getElementById('pre').style="text-decoration:none";
+  };
+};
+
+document.getElementById('nex').onmouseover=function(){
+  if(i!=10){
+    document.getElementById('nex').style="text-decoration:underline";
+  };
+};
+
+document.getElementById('gle').onmouseover=function(){
+  if(i!=10){
+    document.getElementById('nex').style="text-decoration:underline";
+  };
+};
+
+document.getElementById('nex').onmouseout=function(){
+  if(i!=10){
+    document.getElementById('nex').style="text-decoration:none";
+  };
+};
+
+document.getElementById('gle').onmouseout=function(){
+  if(i!=10){
+    document.getElementById('nex').style="text-decoration:none";
+  };
+};
+    
