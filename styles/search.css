@@ -408,7 +408,8 @@ input{
 
 #table{
   position:relative;
-  width:652px;
+  /*width:652px;*/
+  width:57%;
   border: 1px solid #dfe1e5;
   border-radius: 8px;
   font-family: Arial, Helvetica, sans-serif;
@@ -420,7 +421,14 @@ input{
   font-size: 20px;
 }
 
+.sl{
+  display:flex;
+  width: 96.5%;
+}
+
 .lines{
+  display: flex;
+  
   cursor: pointer;
   font-size: 16px;
   padding: 9px 16px;
@@ -465,22 +473,32 @@ input{
   margin-left: 5px;
 }
 
+
+
 #buttonl2{
+  display:flex;
+  align-self: center;
+  
   width: 12px;
   height: 8px;
-  margin-left: 350px;
+  
+  
 }
 
 #buttonl3{
+  display:flex;
+  align-self: center;
   width:12px;
   height: 8px;
-  margin-left: 311px;
+  
 }
 
 #buttonl4{
+  display:flex;
+  align-self: center;
   width:12px;
   height: 8px;
-  margin-left: 284px;
+  
 }
 
 #thl{
